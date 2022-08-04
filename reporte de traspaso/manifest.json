@@ -1,0 +1,10 @@
+{
+  "name": "Reporte de traspaso",
+  "description": "Reporte para controlar traspasos",
+  "version": "0.1",
+  "manifest_version": 3,
+
+"action": {
+  "default_popup": "popup.html"
+}
+}
