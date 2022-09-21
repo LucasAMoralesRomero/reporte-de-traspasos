@@ -1,19 +1,13 @@
+console.log("extension corriendo...");
 //obtenemos el boton de reporte
 const imprimirReporte = document.getElementById("imprimirReporte");
 //obtenemos numero de traspaso
-const nroTraspaso = document.getElementById("nroTraspaso");
+let nroTraspaso = document.getElementById("nroTraspaso");
 //obtenemos numero de departamento
-const nroDepartamento = doocument.getElementById("nroTraspaso");
+let nroDepartamento = document.getElementById("nroTraspaso");
 //cuando el boton es presionado,abrimos una nueva pestaña con el traspaso
 
-function abrirNuevaPestana(dir){
-    //abrimos la nueva pestaña
-    var win = window.open(dir, '_blank');
-    //cambia el foco a la pestaña nueva
-    win.focus();
-}
-function imprimirReporte(){
-    //lanzamos la pestaña con el contenido de reporte
+function openTab(){
+    var newTab = browser.tabs.create({url:'http://aplicaciones/recepciones/REPORTESGENERALES/TraspasosSobFalt2.asp?mvNumtras='+nroTraspaso+'&mvCgruempr=&mvdepto='+nroDepartamento+'&mvsuc=184',active:true})
     
 }
-$('#imprimirReporte').click(function(){abrirNuevaPestana('prueba'+ nroTraspaso + '&' + nroDepartamento)});

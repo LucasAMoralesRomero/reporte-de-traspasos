@@ -1,12 +1,25 @@
 {
+  "manifest_version": 3,
   "name": "Reporte de traspaso",
   "description": "Reporte para controlar traspasos",
-  "version": "0.1",
-  "manifest_version": 3,
-  "background": {
-    "service_worker": "background.js"
+  "version": "0.0.1",
+  "icons":{
+    "128": "/report.png"
   },
-"action": {
+  "content_scripts":[
+    {
+      "matches":["<all_urls>"],
+      "js":["popup.js"]
+    }
+  ],
+  "background": {
+    "service_workers": ["background.js"]
+  },
+  "permissions": [
+    "tabs"
+  ]
+,
+  "action": {
   "default_popup": "popup.html"
 }
 }
