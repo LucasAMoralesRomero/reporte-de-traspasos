@@ -2,11 +2,6 @@
 
 ![Icono](https://raw.githubusercontent.com/LucasAMoralesRomero/reporte-de-traspasos/main/reporte%20de%20traspaso/report.png)
 
-## Advertencia
-| :warning: Alerta: Esta es la versión Legacy de Reporte de Traspasos          |
-|:---------------------------|
-| **Estas en la rama Legacy de Reporte de Traspasos, con soporte para versiones antiguas de Google Chrome **
-
 ## Descripción
 El "Reporte de Traspaso" es una extensión de Chrome que te permite controlar y generar informes de traspasos de manera sencilla.
 
@@ -56,4 +51,6 @@ window.addEventListener('DOMContentLoaded', function () {
     var newURL = "http://ruta-al-reporte" + nroTraspaso.value + "&departamento=" + nroDepartamento.value;
     chrome.tabs.create({ url: newURL });
   })
+
 })
+
