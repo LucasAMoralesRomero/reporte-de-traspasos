@@ -16,4 +16,4 @@ window.addEventListener('DOMContentLoaded', function(){
         chrome.tabs.create({url: newURL})
     })
 })
-console.log("extension corriendo...");
+
