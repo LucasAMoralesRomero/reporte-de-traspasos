@@ -51,4 +51,6 @@ window.addEventListener('DOMContentLoaded', function () {
     var newURL = "http://ruta-al-reporte" + nroTraspaso.value + "&departamento=" + nroDepartamento.value;
     chrome.tabs.create({ url: newURL });
   })
+
 })
+
